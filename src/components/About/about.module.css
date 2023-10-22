@@ -1,0 +1,88 @@
+.aboutSection{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 200px;
+    gap: 35px;
+}
+
+#arrowDown{
+    width: 75px;
+    height: 75px;
+    
+}
+.dotsWrapper{
+    width: 100%;
+}
+
+#rightWrapper{
+    display: flex;
+    justify-content: end;
+   
+}
+
+.dotsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    height: 30px;
+    
+    
+}
+
+.dot{
+    height: 100%;
+    width: 30px;
+    background-color: var(--yellow);
+    border-radius: 200%;
+}
+
+.textContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    font-size: 24px;
+
+}
+
+
+#aboutp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+
+#readMore{
+    cursor: pointer;
+    transform: rotate(180deg);
+    width: 19px;
+    
+}
+
+.textContent span{
+    color: var(--yellow);
+    font-weight: 700;
+}
+
+#linkToCV{
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 100%;
+    border-left: 6px solid var(--yellow);
+    
+    text-transform: uppercase;
+}
+
+#linkToCV a{
+    text-decoration: none;
+    color: white;
+    padding-left: 10px
+}
+
+#linkToCV a:hover {
+    font-style: italic;
+    color: var(--yellow)
+}

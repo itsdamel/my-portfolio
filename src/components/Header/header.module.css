@@ -1,0 +1,40 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px 40px;
+}
+
+.logo{
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-weight: 900;
+}
+
+.logo strong{
+    font-size: 32px;
+    color: var(--yellow);
+}
+
+
+nav a{
+    margin-right: 50px;
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav a:hover, li:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+header img{
+    max-width: 26px;
+    max-height: auto;
+}
+
+ul{
+    list-style: none;
+    
+}

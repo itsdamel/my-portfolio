@@ -1,0 +1,12 @@
+.title{
+    font-size: 40px;
+    position: relative;
+}
+
+.title div{
+    background-color: var(--yellow);
+    width: 81px;
+    height: 6px;
+    position: absolute;
+    right: -20px;
+}

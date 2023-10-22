@@ -1,0 +1,89 @@
+section{
+    display: flex;
+    align-items:center;
+    min-height: 75vh;
+}
+
+.all{
+    width: 800%;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 20px solid var(--yellow);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    
+}
+
+.presentation{
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.presentation h2{
+    font-size: 35px;
+    font-weight: 900;
+}
+strong{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+strong, #myStack{
+    color: var(--yellow);
+}
+
+.tech{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    max-width: 470px;
+}
+.tech div{
+    font-weight: 800;
+    opacity: 80%;
+    padding: 2px 20px;
+    border-radius: 5px ;
+    border: 3px solid var(--white);
+    width: fit-content;
+}
+
+.tech div:hover{
+    color: var(--yellow);
+    border-color: var(--yellow);
+    cursor: pointer;
+}
+
+.images{
+    display: flex;
+    align-items:center;
+    margin-left: 200px;
+    justify-content: space-between;
+    min-width: 500px;
+
+
+}
+
+.images .mel{
+    max-width: auto;
+    max-height: 500px;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
+    
+}
+.socialMedia img{
+    width: 40px;
+}
+

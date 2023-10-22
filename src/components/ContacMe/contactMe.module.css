@@ -1,0 +1,53 @@
+#contactMe{
+    display: flex;
+}
+
+#contactMe{
+    height: 100vh;
+    width: 100vw;
+    gap: 50px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#content{
+    background-color: #1C1C1B;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 4px 10px rgba(0, 0, 0, 0.40);
+    border-radius: 10px;
+    padding: 50px 50px 0px 50px;
+}
+
+.extra{
+    display: flex;
+    align-items: flex-end;
+
+}
+.extra img{
+    max-width: 500px;
+    max-height: 390px;
+    
+}
+.extra .result{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-bottom: 50px;
+
+}
+.extra p{
+    visibility: hidden;
+    border-radius: 10px;
+    padding-left: 10px;
+    max-width: 340px;
+}
+
+.extra #goodResult{
+    border-left: 10px solid var(--yellow);
+}
+.extra #badResult{
+    border-left: 10px solid #FA6A3C;;
+}
