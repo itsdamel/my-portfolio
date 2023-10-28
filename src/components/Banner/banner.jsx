@@ -23,8 +23,8 @@ export default function Banner(){
                 <div className={style.images}>
                     <img className={style.mel} src='assets/coverMe.png'/>
                     <div className={style.socialMedia}>
-                        <img src='assets/linkedin-logo.png' alt='linkedin'/>
-                        <img src='assets/github-logo.png'/>
+                        <a href='https://www.linkedin.com/in/mel-de-melo-2a7824269/' target='_blank' rel='external'><img src='assets/linkedin-logo.png' alt='linkedin'/></a>
+                        <a href="https://github.com/itsdamel" target='_blank' rel='external'><img src='assets/github-logo.png'/></a>
                     </div>
                 </div>
             </div>

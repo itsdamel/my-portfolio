@@ -34,6 +34,7 @@ section{
 strong{
     font-size: 60px;
     font-weight: 900;
+    text-transform: uppercase;
 }
 
 strong, #myStack{
@@ -67,8 +68,6 @@ strong, #myStack{
     margin-left: 200px;
     justify-content: space-between;
     min-width: 500px;
-
-
 }
 
 .images .mel{
@@ -81,9 +80,19 @@ strong, #myStack{
     flex-direction: column;
     justify-content: space-between;
     min-height: 100px;
+    gap: 20px;
     
 }
 .socialMedia img{
-    width: 40px;
+    width: 45px;
+    transition: transform 0.8s;
+}
+
+
+.socialMedia img:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 2px 2px var(--yellow);
+    transform: translateX(-5px) translateY(-3px);
 }
 
