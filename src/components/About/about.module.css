@@ -17,7 +17,6 @@
 #rightWrapper{
     display: flex;
     justify-content: end;
-   
 }
 
 .dotsContainer{
@@ -59,11 +58,13 @@
     
 }
 
-#readMore{
+#readMore, #readLess{
     cursor: pointer;
-    transform: rotate(180deg);
     width: 19px;
-    
+}
+
+#readMore{
+    transform: rotate(180deg)
 }
 
 .textContent span{
