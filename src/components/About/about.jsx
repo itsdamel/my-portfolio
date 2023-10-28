@@ -8,10 +8,16 @@ export default function About(){
         <section className={style.aboutSection}>
             <a href='#text'><img id={style.arrowDown} src='assets/arrow-down.png' alt="go to about me"/></a>
             <div  className={style.dotsWrapper}>
-                <div className={style.dotsContainer}>
-                    <div className={style.dot}></div>
-                    <div className={style.dot}></div>
-                    <div className={style.dot}></div>
+            <div className={style.dotsContainer}>
+                    <div className={style.trigger}>
+                        <div className={style.interactiveDot}></div>
+                    </div>
+                    <div className={style.trigger}>
+                        <div className={style.interactiveDot}></div>
+                    </div>
+                    <div className={style.trigger}>
+                        <div className={style.interactiveDot}></div>
+                    </div>
                 </div>
             </div>
             <div id='text' className={style.textContent}>
@@ -27,9 +33,15 @@ export default function About(){
 
             <div id={style.rightWrapper} className={style.dotsWrapper}>
                 <div className={style.dotsContainer}>
-                    <div className={style.dot}></div>
-                    <div className={style.dot}></div>
-                    <div className={style.dot}></div>
+                    <div className={style.trigger}>
+                        <div className={style.interactiveDot}></div>
+                    </div>
+                    <div className={style.trigger}>
+                        <div className={style.interactiveDot}></div>
+                    </div>
+                    <div className={style.trigger}>
+                        <div className={style.interactiveDot}></div>
+                    </div>
                 </div>
             </div>
         </section>
