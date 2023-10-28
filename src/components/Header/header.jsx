@@ -13,11 +13,6 @@ export default function Header(){
                 <a href='#projects'>.projects</a>
                 <a href='#contactMe'>.contact me</a>
             </nav>
-
-            <ul>
-                <li>EN <img src='assets/arrow-down.png' alt=""/> </li>
-                
-            </ul>
             
         </header>
     )

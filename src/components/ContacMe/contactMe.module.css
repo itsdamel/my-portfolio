@@ -26,28 +26,36 @@
     align-items: flex-end;
 
 }
+
 .extra img{
     max-width: 500px;
     max-height: 390px;
-    
 }
 .extra .result{
+
     display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    height: 100%;
     flex-direction: column;
-    gap: 80px;
     padding-bottom: 50px;
 
 }
 .extra p{
-    visibility: hidden;
     border-radius: 10px;
     padding-left: 10px;
     max-width: 340px;
 }
 
+#goodResult, #badResult{
+    line-height: 30px;
+}
 .extra #goodResult{
-    border-left: 10px solid var(--yellow);
+    color: #75b37a;
+    border-left: 10px solid #108b1a;
 }
 .extra #badResult{
-    border-left: 10px solid #FA6A3C;;
+    color: #ee6056;
+    border-left: 10px solid #dd1405;
 }

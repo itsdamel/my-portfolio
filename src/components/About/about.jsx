@@ -8,18 +8,11 @@ export default function About(){
     const [showMore, setShowMore] = useState(false);
     const moreContent = " people say I’m a nice person to be around. I love Lego, board games and watching volleyball, if that’s not a crazy enough mixture for you, I also enjoy renewing old forniture!"
 
-    const preview = () => {
-        return(
-            <img onClick={handleShowMore} id={style.readMore} src='assets/left-arrow.png' alt='read more'/>
-        )
-    }
-
-
     const handleShowMore = () => setShowMore(!showMore);
 
     return(
         <section className={style.aboutSection}>
-            <a href='#text'><img id={style.arrowDown} src='assets/arrow-down.png' alt="go to about me"/></a>
+            <a href='#text'><img id={style.arrowDown} src='assets/arrow-down.svg' alt="go to about me"/></a>
             <div  className={style.dotsWrapper}>
             <div className={style.dotsContainer}>
                     <div className={style.trigger}>
