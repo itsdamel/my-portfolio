@@ -8,13 +8,15 @@ export default function Banner(){
                 <div className={style.content}>
                     <div className={style.presentation}>
                         <h2>Hi there! I'm</h2>
-                        <strong><Typewriter words={['Mel De Melo']}
-                loop={1}
-                cursor
-                cursorStyle='|'
-                typeSpeed={150}
-                deleteSpeed={50}
-                delaySpeed={1000}/></strong>,
+                        <strong>
+                            <Typewriter words={['Mel De Melo']}
+                                loop={1}
+                                cursor
+                                cursorStyle='|'
+                                typeSpeed={150}
+                                deleteSpeed={50}
+                                delaySpeed={1000}/>
+                        </strong>,
                         <h2>a <span id={style.myStack}><Typewriter words={['front-e', 'back-e', 'full-stack']}
                 loop={1} deleteSpeed={50} delaySpeed={30}/></span> software engineer</h2>
                     </div>

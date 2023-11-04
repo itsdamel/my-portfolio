@@ -6,8 +6,11 @@ import Skills from './components/Skills/skills';
 import Projects from './components/Projects/projects';
 import ContactMe from './components/ContacMe/contactMe';
 
+//Toastify lib
+import { ToastContainer, Flip } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
-  
 
   return (
     <>
@@ -17,7 +20,7 @@ function App() {
       <Skills />
       <Projects />
       <ContactMe />
-
+      <ToastContainer  role="alert" position="bottom-right" theme="dark" newestOnTop={true} limit={3} transition={Flip}/>
     </>
   )
 }

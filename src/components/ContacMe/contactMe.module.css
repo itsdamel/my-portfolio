@@ -1,6 +1,6 @@
 .contactMe{
     display: flex;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     gap: 50px;
     margin-bottom: 100px;
@@ -12,6 +12,8 @@
 #content{
     background-color: #1C1C1B;
     display: flex;
+    width: 80%;
+    height: 100%;
     flex-direction: column;
     box-shadow: 5px 5px 4px 10px rgba(0, 0, 0, 0.40);
     border-radius: 10px;
@@ -20,39 +22,16 @@
 
 .extra{
     display: flex;
+    max-height: 50%;
+    justify-content: center;
     align-items: flex-end;
+    border: 2px solid red;
 
 }
 
 .extra img{
-    max-width: 500px;
-    max-height: 390px;
-}
-.extra .result{
-
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
-    padding-bottom: 50px;
-
-}
-.extra p{
-    border-radius: 10px;
-    padding-left: 10px;
-    max-width: 340px;
+    max-width:30%;
+    max-height: auto;
 }
 
-#goodResult, #badResult{
-    line-height: 30px;
-}
-.extra #goodResult{
-    color: #75b37a;
-    border-left: 10px solid #108b1a;
-}
-.extra #badResult{
-    color: #ee6056;
-    border-left: 10px solid #dd1405;
-}
+

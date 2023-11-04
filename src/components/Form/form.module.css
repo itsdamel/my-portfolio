@@ -5,7 +5,8 @@ fieldset, #form{
 #form{
     justify-content: center;
     gap: 40px;
-    min-width: 70vw;
+    min-width: 70%;
+    border: 2px solid red;
     
 }
 
@@ -13,7 +14,6 @@ fieldset, #form{
     border: none;
     width: 50%;
     gap: 20px;
-
     flex-direction: column;
 }
 
@@ -38,12 +38,14 @@ input, textarea{
 }
 
 #form textarea{
-    max-width: 500px;
-    height: 200px;
+    max-width: 100%;
+    height: 200%;
 }
 
 .buttonWrapper{
     text-align: right;
+    width: 100%;
+    border: 2px solid green;
 }
 
 #submitMessage{
@@ -51,7 +53,7 @@ input, textarea{
     cursor: pointer;
     color: var(--black);
     width: 309px;
-    font-size: 28px;
+    font-size: 20px;
     height: 50px;
     background: var(--yellow);
 }

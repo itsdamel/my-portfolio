@@ -24,7 +24,7 @@ let technologies = [{
     imgSrc: 'github-logo.png'
 },
 {
-    name:'JAVSCRIPT',
+    name:'JAVASCRIPT',
     imgSrc: 'javascript-logo.png'
 },
 {
