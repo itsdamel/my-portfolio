@@ -1,4 +1,4 @@
-#projects{
+.projects{
     height: 100vh;
     display: flex;
     gap: 50px;
@@ -29,6 +29,34 @@ input[type="radio"]:checked + label{
     cursor: pointer;
     border: none;
     background: var(--black);
+
+}
+#carouselControll button div{
+    width: 40px;
+    height: 40px;
+    
+    background-size: cover;
+}
+
+#leftArrow{
+    background: url('assets/left-arrow.png') no-repeat;
+}
+
+#rightArrow{
+    background: url('assets/right-arrow.png') no-repeat;
+}
+
+#leftArrow:hover{
+    background-image: url('assets/yellow-left-arrow.png');
+}
+
+#rightArrow:hover{
+    background-image: url('assets/yellow-right-arrow.png');
+}
+#carouselControll button > div :hover{
+    cursor: pointer;
+    border: none;
+    background-image: var(--black);
 
 }
 .filter label:hover{

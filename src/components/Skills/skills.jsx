@@ -12,17 +12,16 @@ export default function Skills(){
     })
 
     return(
-        <section  id='skillsNav'className={style.skills}>
+        <section id='skills' data-aos="fade-left" data-aos-duration="500"  className={style.skills}>
+
                <SectionTitle title='skills'/>
 
                <div className={style.main}>
-
-                   <div className={style.cardsContainer}>
-                   
+                    <div className={style.cardsContainer}>
+                    
                         {skillsList}
 
-                   </div>
-                
+                    </div>
                </div>
         </section>
     )
@@ -30,7 +29,7 @@ export default function Skills(){
 
 function SkillCard({name, imgSrc}){
     return(
-        <div className={style.skillCard}>
+        <div data-aos="fade-left" data-aos-duration="700" className={style.skillCard}>
             <img src={`assets/${imgSrc}`}/>
             <h3>{name}</h3>
         </div>

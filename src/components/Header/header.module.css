@@ -1,10 +1,17 @@
 header{
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    margin-bottom: 30px;
+    background-color: #1C1C1B;
     align-items: center;
     justify-content: space-between;
+    width: 100vw;
+    height: fit-content;
     font-weight: bold;
     font-size: 24px;
-    padding: 20px 40px;
+    padding: 10px 40px;
 }
 
 .logo{

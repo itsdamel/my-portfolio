@@ -8,6 +8,10 @@ let technologies = [{
 
 },
 {
+    name: 'EXPRESS.JS',
+    imgSrc: 'express-logo.png'
+},
+{
     name:'API REST',
     imgSrc: 'rest-logo.png'
 },
@@ -34,6 +38,10 @@ let technologies = [{
 {
     name:'HTML5',
     imgSrc: 'html-logo.png'
+},
+{
+    name: 'postman',
+    imgSrc: 'postman-logo.png'
 },
 {
     name:'FIGMA',

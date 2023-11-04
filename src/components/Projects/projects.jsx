@@ -1,71 +1,79 @@
 import SectionTitle from "../SectionTitle/sectionTitle"
 import ProjectCard from "../projectCard/projectCard";
 import style from './projects.module.css';
-import { favorites, frontEnd, backEnd, fullStack} from "../../data/projects";
+import { projects, favorites, frontEnd, backEnd, fullStack} from "../../data/projects";
 import { useState, useRef } from "react";
 
 export default function Projects(){
     const carousel= useRef(null)
     
-    const [stack, setStack] = useState(favorites)
-    
-    const showFrontEnd = () =>{
-        
-        setStack(frontEnd)
-    }
-    const showBackEnd = () =>{
-        
-        setStack(backEnd)
-    }
-    const showFullStack = () =>{
-        
-        setStack(fullStack)
-    }
+    const [stack, setStack] = useState(projects)
+    const handleStack = (e) => {
+        let selected = e.target.id
 
-    const showFavorites = () => {
+        switch(selected){
+            case 'frontEnd':
+                    setStack(frontEnd);
+                break;
+            case 'backEnd':
+                    setStack(backEnd);
+                break;
+            case 'fullStack':
+                    setStack(fullStack);
+                break;
+            case 'favorites':
+                setStack(favorites)
+            break;
+        }
+       
         
-        setStack(favorites)
     }
-    const scrollLeft =(e) =>{
+   
+    const scrollLeft = (e) =>{
         e.preventDefault();
         carousel.current.scrollLeft -=  carousel.current.offsetWidth
     }
-    const scrollRight =(e) =>{
+    const scrollRight = (e) =>{
         e.preventDefault();
         carousel.current.scrollLeft += carousel.current.offsetWidth
     }
 
     
     return(
-        <section id={style.projects }>
+        <section id='projects' className={style.projects}>
             <SectionTitle title='projects'/>
             <nav className={style.filter}>
-                <input type="radio" name="stack" id='frontend' onClick={showFrontEnd}/>
-                <label for="frontend">front-end</label> 
+                <input type="radio" name="stack" id='frontEnd' onClick={handleStack} />
+                <label for='frontEnd' >front-end</label> 
 
                 <span>|</span> 
 
-                <input type="radio"  name='stack'id='backend' onClick={showBackEnd}/>
-                <label for="backend">back-end</label> 
+                <input type="radio"  name='stack' id='backEnd'  onClick={handleStack}/>
+                <label for="backEnd">back-end</label> 
 
                 <span>|</span>
 
-                <input type="radio" name="stack" id='fullstack' onClick={showFullStack}/>
-                <label for="fullstack">fullstack</label> 
+                <input type="radio" name="stack" id='fullStack' onClick={handleStack}/>
+                <label for="fullStack">fullstack</label> 
 
                 <span>|</span> 
 
-                <input type="radio" name="stack" id='favorites' onClick={showFavorites}/>
+                <input type="radio" name="stack" id='favorites' onClick={handleStack}/>
                 <label for="favorites">favorites</label> 
             </nav> 
 
-            <div ref={carousel} id={style.carousel}>
-                {stack.map((project) => <ProjectCard key={project.id} name={project.name} stack={project.stacks}description={project.description} preview={project.preview}/>)}
+            <div data-aos="fade-down" data-aos-once="false" ref={carousel} id={style.carousel}>
+                {stack.map((project) => <ProjectCard key={project.id} project={project}/>)}
                 
             </div>
             <div id={style.carouselControll}>
-                <button onClick={scrollLeft}><img src='assets/left-arrow.png' alt='scroll left'></img></button>
-                <button onClick={scrollRight}><img src='assets/right-arrow.png' alt='scroll right'></img></button>
+                <button onClick={scrollLeft}>
+                    <div id={style.leftArrow } ></div>
+                </button>
+                <button onClick={scrollRight}>
+                    <div id={style.rightArrow}></div>
+                    
+                </button>
             </div>
         </section>
     )

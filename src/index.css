@@ -13,5 +13,12 @@
 body, html{
   background-color: var(--black);
   color: var(--white);
+  display: flex;
+  align-items: center;
   scroll-behavior: smooth;
 }
+
+html{
+  overflow-x: hidden;
+}
+

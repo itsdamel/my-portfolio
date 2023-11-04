@@ -7,7 +7,7 @@ export default function ContactMe(){
     const [errorVisible, setErrorVisible] = useState(false);
     const [sucessVisible, setSucessVisible] = useState(false);
     return(
-        <section id={style.contactMe}>
+        <section id="contact" className={style.contactMe}>
             <SectionTitle title='contact me'/>
             <div id={style.content}>
                 <Form setErrorVisible={setErrorVisible} setSucessVisible={setSucessVisible}/>

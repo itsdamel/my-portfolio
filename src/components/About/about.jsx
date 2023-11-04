@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import SectionTitle from '../SectionTitle/sectionTitle';
 
@@ -11,7 +10,8 @@ export default function About(){
     const handleShowMore = () => setShowMore(!showMore);
 
     return(
-        <section className={style.aboutSection}>
+        <section  className={style.aboutSection}>
+
             <a href='#text'><img id={style.arrowDown} src='assets/arrow-down.svg' alt="go to about me"/></a>
             <div  className={style.dotsWrapper}>
             <div className={style.dotsContainer}>
@@ -26,7 +26,7 @@ export default function About(){
                     </div>
                 </div>
             </div>
-            <div id='text' className={style.textContent}>
+            <div id='text' data-aos="fade-left" data-aos-duration="700" className={style.textContent}>
                     <SectionTitle title='about'/>
                     <div id={style.aboutp}>
                         <p>I’m a enthusiastic long-life student <span>passionate about problem solving</span>. Whenever I think about a new idea, planning how to translate it into code is my second favorite part, the first one is coding it! </p>
@@ -35,9 +35,9 @@ export default function About(){
                     </div>
             </div>
 
-            <div id={style.linkToCV}><a href='#'>My CV</a></div>
+            <div id={style.linkToCV}> <a href='#'>My CV</a></div>
 
-            <div id={style.rightWrapper} className={style.dotsWrapper}>
+            <div  id={style.rightWrapper} className={style.dotsWrapper}>
                 <div className={style.dotsContainer}>
                     <div className={style.trigger}>
                         <div className={style.interactiveDot}></div>
