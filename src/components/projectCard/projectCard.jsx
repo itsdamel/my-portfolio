@@ -1,7 +1,7 @@
 import style from './projectCard.module.css';
 
 export default function ProjectCard({ project }){
-    //PropValidation
+    
     let techList = project.stacks.map((tech) => <Tech techName={tech}/>)
     return(
         <div data-aos="fade-down" data-aos-once="false" data-aos-duration="700" className={style.card}>

@@ -3,7 +3,7 @@ let projects = [
         name: 'Casa Verde',
         id: '0casa0',
         finished: true,
-        description: 'An ecommerce 100% responsive built with REACT and Node',
+        description: 'A user-friendly design, responsive layout, a robust shopping cart feature and filters!',
         stack: ['full-stack', 'front-end', 'back-end', 'favorites'],
         stacks: ['REACT', 'Node', 'ViteExpress', 'Styled components', 'API REST', 'HTTP Protocol'],
         preview: 'assets/ecasaverde.png',
@@ -14,7 +14,7 @@ let projects = [
         name:'Popular movies',
         id: '1popular1',
         finished: true,
-        description: 'A simple page where you can look for any movies and bookmark them.',
+        description: 'Discover popular films, search and bookmark your must-watch films while storing your preferences in local storage.',
         stack: ['front-end'],
         stacks:['HTML', 'CSS', 'Javascript', 'API REST', 'MCV'],
         preview: 'assets/popular-movies-cover.png',
@@ -25,24 +25,14 @@ let projects = [
         name: 'Portfolio',
         id: '2portfolio2',
         finished: true,
-        description: 'My first personal portfolio',
+        description: "A window into the capabilities I bring to the table.",
         stack: ['front-end', 'favorites'],
         stacks: ['REACT', 'NODE', 'CSS module', 'API REST'],
         preview: 'assets/myPortifolio-cover.png',
         live: '',
         repository: 'https://github.com/itsdamel/my-portfolio'
-    },
-    {
-        name:'GameHub',
-        id: '3gamehub3',
-        finished: false,
-        description: 'An online game shop where I worked and lead nine other developers',
-        stack: ['front-end', 'favorites'],
-        stacks:['REACT', 'CSS', 'Node', 'API REST', 'Git', 'Jira', 'Figma'],
-        preview: 'assets/gameHub-cover.png',
-        live: '',
-        repository: ''
     }
+  
 ]
 
 const frontEnd = projects.filter((project) => project.stack.includes('front-end'))
