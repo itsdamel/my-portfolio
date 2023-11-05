@@ -29,7 +29,7 @@ export default function Skills(){
 
 function SkillCard({name, imgSrc}){
     return(
-        <div data-aos="fade-left" data-aos-duration="700"   className={style.skillCard}>
+        <div data-aos="fade-left" data-aos-duration="700"  className={style.skillCard}>
             <img src={`assets/${imgSrc}`}/>
             <h3>{name}</h3>
         </div>

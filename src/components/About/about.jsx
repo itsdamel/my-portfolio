@@ -5,7 +5,7 @@ import style from './about.module.css';
 
 export default function About(){
     const [showMore, setShowMore] = useState(false);
-    const moreContent = " people say I’m a nice person to be around. I love Lego, board games and watching volleyball, if that’s not a crazy enough mixture for you, I also enjoy renewing old forniture!"
+    const moreContent = "people say I’m a nice person to be around. I love Lego, board games and watching volleyball, if that’s not a crazy enough mixture for you, I also enjoy renewing old forniture!"
 
     const handleShowMore = () => setShowMore(!showMore);
 

@@ -63,7 +63,7 @@ strong, #myStack{
 .tech div:hover{
     color: var(--yellow);
     border-color: var(--yellow);
-    cursor: pointer;
+    cursor: default;
 }
 
 .images{
@@ -73,7 +73,6 @@ strong, #myStack{
     width: 50%;
     max-width: 550px;
  
-   
 }
 
 .images .mel{

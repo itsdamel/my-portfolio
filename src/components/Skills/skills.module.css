@@ -40,7 +40,6 @@
     height: auto;
 }
 .skillCard:hover{
-    cursor: pointer;
     border-radius: 5px;
     background: linear-gradient(-220deg, rgba(234,175,64,1) 32%, rgba(209,183,43,0.9467436632856268) 56%, rgba(43,41,41,1) 88%);
 }
