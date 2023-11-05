@@ -7,11 +7,12 @@ header{
     background-color: #1C1C1B;
     align-items: center;
     justify-content: space-between;
-    width: 100vw;
+    min-width: 100vw;
     height: fit-content;
     font-weight: bold;
     font-size: 24px;
     padding: 10px 40px;
+
 }
 
 .logo{
@@ -44,4 +45,28 @@ header img{
 ul{
     list-style: none;
     
+}
+
+/* Media queries  */
+@media (max-width: 810px) {
+    header{
+        flex-direction: column;
+        font-size: 3.4vw;
+    }
+    nav a{
+        margin-right: 20px;
+        
+    }
+}
+
+@media (max-width: 360px) {
+   header{
+        padding: 5px;
+        font-size: 4.5vw;
+   }
+   nav a{
+    margin-right: 10px;
+    
+   }
+   .logo strong{font-size: 26px;}
 }

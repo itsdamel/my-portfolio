@@ -1,13 +1,15 @@
 .aboutSection{
     display: flex;
     flex-direction: column;
-    padding: 20px 200px;
+    align-items: center;
+    padding: 20px 150px;
     gap: 35px;
+
 }
 
 #arrowDown{
-    width: 75px;
-    height: 75px;
+    width: 70%;
+    height: 70%;
     
 }
 .dotsWrapper{
@@ -16,20 +18,21 @@
 
 #rightWrapper{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .dotsContainer{
     display: flex;
-    justify-content: space-between;
-    width: 140px;
-    height: 30px;
-    
+    justify-content: flex-start;
+    gap: 10px;
+    width: fit-content;
+    height: 40px;
     
 }
 
 .interactiveDot{
-    height: 100%;
+    height: 30px;
     width: 30px;
     background-color: var(--yellow);
     border-radius: 200%;
@@ -45,6 +48,7 @@
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    width: 100%;
     font-size: 24px;
 
 }
@@ -75,7 +79,8 @@
 #linkToCV{
     display: flex;
     align-items: center;
-    height: 45px;
+    text-align: left;
+    height: 45px; 
     width: 100%;
     border-left: 6px solid var(--yellow);
     
@@ -91,4 +96,39 @@
 #linkToCV a:hover {
     font-style: italic;
     color: var(--yellow)
+}
+
+@media screen and (max-width: 950px) {
+
+    .aboutSection{
+        padding: 5px 80px;
+    }
+   
+}
+
+@media screen and (max-width: 600px) {
+    .aboutSection{
+        padding: 5px 30px;
+    }
+    .textContent{
+        font-size: 20px;
+        word-break: break-all;
+        
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .aboutSection{
+        padding: 5px 10px;
+    }
+
+    #arrowDown{
+        width: 70px;
+        height: auto;
+        
+    }
+    .textContent{
+        font-size: 16px;
+        gap: 30px;
+    }
 }

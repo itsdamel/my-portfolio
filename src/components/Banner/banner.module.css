@@ -1,8 +1,8 @@
-section{
+.banner{
     display: flex;
     align-items:center;
-    min-height: 75vh;
-    max-width: 100vw;
+    max-height: 75vh;
+    min-width: 100vw;
 }
 
 .all{
@@ -10,7 +10,7 @@ section{
     display: flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    align-items: space-between;
     border-bottom: 20px solid var(--yellow);
 }
 
@@ -19,24 +19,23 @@ section{
     flex-direction: column;
     align-content: center;
     margin-left: 8%;
-    justify-content: space-around;
     width: 50%;
 }
 
 .presentation{
-
-    font-size: 35px;
+    font-size: 2vw;
     font-weight: 900;
     margin-bottom: 30px;
     width: 100%;
+    
 }
 
 .presentation h2{
-    font-size: 35px;
     font-weight: 900;
 }
+
 strong{
-    font-size: 60px;
+    font-size: 4vw;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -49,13 +48,14 @@ strong, #myStack{
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
-    max-width: 470px;
+    max-width: 100%;
 }
 .tech div{
     font-weight: 800;
+    font-size: 1.7vw;
     opacity: 80%;
     padding: 2px 20px;
-    border-radius: 5px ;
+    border-radius: 5px;
     border: 3px solid var(--white);
     width: fit-content;
 }
@@ -69,26 +69,27 @@ strong, #myStack{
 .images{
     display: flex;
     align-items:center;
-    margin-left: 200px;
     justify-content: space-around;
     width: 50%;
+    max-width: 550px;
+ 
+   
 }
 
 .images .mel{
-    max-width: auto;
-    max-height: 500px;
+    width: 60%;
+    height: 80%;
 }
 
 .socialMedia{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100px;
     gap: 20px;
     
 }
 .socialMedia img{
-    width: 45px;
+    width: 36px;
     transition: transform 0.8s;
 }
 
@@ -100,3 +101,79 @@ strong, #myStack{
     transform: translateX(-5px) translateY(-3px);
 }
 
+@media screen and (max-width: 620px){
+    
+    .tech{
+        display: none;
+    }
+    .images{
+        width: 40% ;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .images .mel{
+        max-width: 200px;
+
+    }
+
+    .content{
+       padding-left: 10px;
+        width: 40%;
+
+    }
+    .socialMedia{
+        gap: 10px;
+    }
+    .socialMedia img{
+        width: 30px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .banner{
+        height: 60vh;
+    }
+    .all{
+        flex-direction: column;
+    }
+    .content{
+        word-break:normal;
+        width: 100%;
+        height: 50%;
+    }
+    .presentation{
+        font-size: 16px;
+    }
+    strong{
+        font-size: 30px
+    }
+    .images{
+        height: 50%;
+        position: relative;
+        width: 100%;
+    }
+    .images .mel{
+        position: absolute;
+        top: -20%;
+        right: 5%;
+        transform: rotateY(180deg);
+        height: 120%;
+    }
+    .socialMedia{
+        height: fit-content;
+        width: fit-content;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .all{
+        align-items: center;
+        justify-content: center;
+    }
+    .images{
+        display: none;
+    }
+}

@@ -10,7 +10,7 @@ export default function About(){
     const handleShowMore = () => setShowMore(!showMore);
 
     return(
-        <section  className={style.aboutSection}>
+        <section id='about' className={style.aboutSection}>
 
             <a href='#text'><img id={style.arrowDown} src='assets/arrow-down.svg' alt="go to about me"/></a>
             <div  className={style.dotsWrapper}>

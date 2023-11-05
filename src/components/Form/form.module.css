@@ -6,8 +6,6 @@ fieldset, #form{
     justify-content: center;
     gap: 40px;
     min-width: 70%;
-    border: 2px solid red;
-    
 }
 
 #form fieldset{
@@ -45,16 +43,26 @@ input, textarea{
 .buttonWrapper{
     text-align: right;
     width: 100%;
-    border: 2px solid green;
 }
 
 #submitMessage{
     box-shadow: 0px 8px 4px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     color: var(--black);
-    width: 309px;
+    width: 100%;
     font-size: 20px;
     height: 50px;
     background: var(--yellow);
+}
+
+@media (max-width: 700px) {
+    #form{
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    #form fieldset{
+        width: 100%;
+    }
 }
 
