@@ -38,19 +38,19 @@ input[type="radio"]:checked + label{
 }
 
 #leftArrow{
-    background: url('assets/left-arrow.png') no-repeat;
+    background: url('../../../public/assets/left-arrow.png') no-repeat;
 }
 
 #rightArrow{
-    background: url('assets/right-arrow.png') no-repeat;
+    background: url('../../../public/assets/right-arrow.png') no-repeat;
 }
 
 #leftArrow:hover{
-    background-image: url('assets/yellow-left-arrow.png');
+    background-image: url('../../../public/assets/yellow-left-arrow.png');
 }
 
 #rightArrow:hover{
-    background-image: url('assets/yellow-right-arrow.png');
+    background-image: url('../../../public/assets/yellow-right-arrow.png');
 }
 #carouselControll button > div :hover{
     cursor: pointer;
