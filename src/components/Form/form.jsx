@@ -51,7 +51,7 @@ export default function Form(){
 
                 <label for='message'>Message</label>
 
-                <textarea ref={message} id='message'></textarea>
+                <textarea ref={message} name='message' id='message'></textarea>
 
                 <div className={style.buttonWrapper}><button type='submit' id={style.submitMessage}>Send message</button></div>
 
