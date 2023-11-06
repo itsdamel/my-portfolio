@@ -7,7 +7,7 @@ let projects = [
         stack: ['full-stack', 'front-end', 'back-end', 'favorites'],
         stacks: ['REACT', 'Node', 'ViteExpress', 'Styled components', 'API REST', 'HTTP Protocol'],
         preview: 'assets/ecasaverde.png',
-        live: 'https://startling-torte-474d73.netlify.app',
+        live: 'https://willowy-sopapillas-7e536a.netlify.app/',
         repository: 'https://github.com/itsdamel/ecasaverde'
     },
     {
@@ -29,7 +29,7 @@ let projects = [
         stack: ['front-end', 'favorites'],
         stacks: ['REACT', 'NODE', 'CSS module', 'API REST'],
         preview: 'assets/myPortifolio-cover.png',
-        live: '',
+        live: 'https://meldemelo-portfolio.vercel.app/',
         repository: 'https://github.com/itsdamel/my-portfolio'
     }
   

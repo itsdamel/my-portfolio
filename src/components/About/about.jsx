@@ -35,7 +35,7 @@ export default function About(){
                     </div>
             </div>
 
-            <div id={style.linkToCV}> <a href='#'>My CV</a></div>
+            <div id={style.linkToCV}> <a href='https://drive.google.com/file/d/1MswvVmo5zaT7txA4BR5j4mn5K9EjkHI4/view?usp=sharing' target='_blank'>My CV</a></div>
 
             <div  id={style.rightWrapper} className={style.dotsWrapper}>
                 <div className={style.dotsContainer}>
