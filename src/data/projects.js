@@ -10,6 +10,7 @@ let projects = [
         live: 'https://willowy-sopapillas-7e536a.netlify.app/',
         repository: 'https://github.com/itsdamel/ecasaverde'
     },
+
     {
         name:'Popular movies',
         id: '1popular1',
@@ -22,8 +23,19 @@ let projects = [
         repository: 'https://github.com/itsdamel/popular-movies'
     },
     {
+        name: 'BMELT',
+        id: '2bmelt2',
+        finished: false,
+        description: "A dynamic music discovery page that introduces 'Jam Mode' – a unique feature integrated with the Spotify API.",
+        stack: ['front-end', 'back-end', 'full-stack','favorites'],
+        stacks: ['Vue', 'Context API', 'Node.js', 'Express','CSS'],
+        preview: 'assets/bmelt-preview.png',
+        live: '#',
+        repository: '#'
+    },
+    {
         name: 'Portfolio',
-        id: '2portfolio2',
+        id: '3portfolio3',
         finished: true,
         description: "A window into the capabilities I bring to the table.",
         stack: ['front-end', 'favorites'],
