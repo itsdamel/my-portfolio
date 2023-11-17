@@ -12,6 +12,12 @@
     background-repeat: no-repeat;
     background-position: center top;
 }
+/* coming soon projects style */
+.soon .warning{
+    text-align: center;
+    font-weight: bold;
+}
+
 
 .firstSlide, .secondSlide{
     width: 400px;
@@ -91,12 +97,12 @@
 .content h4{
     font-size: 20px;
 }
-.content .tech{
+.content .techDiv{
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
 }
-.content span{
+.content .techDiv .tech{
     font-size: 13px;
     border: 1px solid white;
     border-radius: 10px;

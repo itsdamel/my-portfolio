@@ -4,7 +4,7 @@ export default function ProjectCard({ project }){
     
     let techList = project.stacks.map((tech) => <Tech techName={tech}/>)
     return(
-        <div data-aos="fade-down" data-aos-once="false" data-aos-duration="700" className={style.card}>
+        <div data-aos="fade-down" data-aos-once="false" data-aos-duration="700" className={ `${style.card} ${!project.finished && style.soon}`}>
 
             <div className={style.firstSlide}>
 
@@ -18,7 +18,7 @@ export default function ProjectCard({ project }){
 
                 <div className={style.content}>
                     <h4>{project.name}</h4>
-                    <div className={style.tech}> 
+                    <div className={style.techDiv}> 
 
                         {techList}
 
@@ -26,22 +26,26 @@ export default function ProjectCard({ project }){
 
 
                     <p>{project.description}</p>
-                    <div className={style.buttonsDiv}>
-                        <a href={project.live} target='_blank'>
+                    { 
+                        project.finished ? (
+                            <div className={style.buttonsDiv}>
+                                <a href={project.live} target='_blank'>
 
-                            <button>
-                                <img src='assets/live.png' alt=''></img>See live
-                            </button>
-                        </a>
+                                    <button>
+                                        <img src='assets/live.png' alt=''></img>See live
+                                    </button>
+                                </a>
 
-                        <a href={project.repository} target='_blank' >
-                            <button>
-                                <img src='assets/cardGithub.png' alt=''></img>GitHub
-                            </button>
-                        </a>
-                    </div>
-                    
-
+                                <a href={project.repository} target='_blank' >
+                                    <button>
+                                        <img src='assets/cardGithub.png' alt=''></img>GitHub
+                                    </button>
+                                </a>
+                            </div>
+                        ) : (
+                            <span className={style.warning}>COMING SOON</span>
+                        )
+                    }
                 </div>
 
             </div>
@@ -55,6 +59,6 @@ export default function ProjectCard({ project }){
 
 function Tech({techName}){
     return(
-        <span>{techName}</span>
+        <span className={style.tech}>{techName}</span>
     )
 }
