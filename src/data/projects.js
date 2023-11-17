@@ -43,7 +43,19 @@ let projects = [
         preview: 'assets/myPortifolio-cover.png',
         live: 'https://meldemelo-portfolio.vercel.app/',
         repository: 'https://github.com/itsdamel/my-portfolio'
-    }
+    },
+    {
+        name: 'GameHub',
+        id: '4gamehub4',
+        finished: false,
+        description: 'A digital game store being crafted with a team of nine developers through a lot of code reviews, pull requests, and weekly meetings.',
+        stack: ['front-end', 'favorites'],
+        stacks: ['REACT', 'Styled Components', 'Git', 'Json-server'],
+        preview: 'assets/gameHub-preview.png',
+        live: '#',
+        repository: '#'
+    },
+
   
 ]
 
