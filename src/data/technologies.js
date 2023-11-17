@@ -3,6 +3,10 @@ let technologies = [{
     imgSrc: 'react-logo.png'
 },
 {
+    name: 'VUE JS',
+    imgSrc: 'vue-logo.png'
+},
+{
     name:'NODE JS',
     imgSrc: 'node-logo.png'
 
