@@ -40,11 +40,11 @@ export default function Banner(){
                     </div>
                     <div className={style.tech}>
                         <div data-aos="fade-right">REACT.js</div>
+                        <div data-aos="fade-right">VUE</div>
                         <div data-aos="fade-right">NODE.js</div>
                         <div data-aos="fade-right">HTML</div>
                         <div data-aos="fade-right">CSS</div>
                         <div data-aos="fade-right">JAVASCRIPT</div>
-                        <div data-aos="fade-right">PYTHON</div>
                         <div data-aos="fade-right">MySQL</div>
                     </div>
                     {smallScreen&&<SocialMedia/>}
