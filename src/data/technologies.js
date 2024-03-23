@@ -3,6 +3,10 @@ let technologies = [{
     imgSrc: 'react-logo.png'
 },
 {
+    name: "Kotlin",
+    imgSrc: 'kotlin-logo.png'
+},
+{
     name: 'VUE JS',
     imgSrc: 'vue-logo.png'
 },
@@ -10,6 +14,10 @@ let technologies = [{
     name:'NODE JS',
     imgSrc: 'node-logo.png'
 
+},
+{
+    name: 'Jetpack Compose',
+    imgSrc: 'compose-logo.png'
 },
 {
     name: 'EXPRESS.JS',
