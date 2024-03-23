@@ -42,10 +42,11 @@ export default function Banner(){
                         <div data-aos="fade-right">REACT.js</div>
                         <div data-aos="fade-right">VUE</div>
                         <div data-aos="fade-right">NODE.js</div>
-                        <div data-aos="fade-right">HTML</div>
-                        <div data-aos="fade-right">CSS</div>
+                        <div data-aos="fade-right">KOTLIN</div>
+                        <div data-aos="fade-right">GIT</div>
                         <div data-aos="fade-right">JAVASCRIPT</div>
-                        <div data-aos="fade-right">MySQL</div>
+                        <div data-aos="fade-right">JETPACK COMPOSE</div>
+                        <div data-aos="fade-right">FIGMA</div>
                     </div>
                     {smallScreen&&<SocialMedia/>}
                     
