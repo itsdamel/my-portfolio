@@ -21,7 +21,7 @@ export default function Form(){
       
         try {
            await toast
-           .promise(emailJs.sendForm('service_k2y3r9p', 'template_3yum136', form.current, 'o1Q7wMCDuLlQOp7_K'),
+           .promise(emailJs.sendForm('service_rv7zd55', 'template_3yum136', form.current, 'o1Q7wMCDuLlQOp7_K'),
             {
                 pending: "Trying to send email...",
                 success: "Email sent!",
